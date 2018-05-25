@@ -6,8 +6,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db1',
-        'USER': 'fibladmin',
-        'PASSWORD': '',
+        'USER': 'superuser',
+        'PASSWORD': 'superuser',
         'HOST': 'localhost',
         'PORT': '',                      # Set to empty string for default.
     }
