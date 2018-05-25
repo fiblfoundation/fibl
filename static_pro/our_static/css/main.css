@@ -1,0 +1,32 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    background-color: #f2fefe;
+}
+
+.bgc {
+    background-color: #f2fefe;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.navbar {
+    background-color: #17a2b8;
+  }
+
+
+/*@font-face {*/
+  /*font-family: 'Roboto', sans-serif;*/
+  /*font-style: normal;*/
+  /*font-weight: 300;*/
+/*}*/
+
+/*@font-face {*/
+  /*font-family: 'Roboto';*/
+  /*font-style: normal;*/
+  /*font-weight: 400;*/
+/*}*/

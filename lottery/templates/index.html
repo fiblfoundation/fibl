@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<style>
+.full-img2 {
+    background-image: url("{% static 'img/bitcoin2.jpg' %}");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.full-img3 {
+    background-image: url("{% static 'img/bitcoin3.png' %}");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.item-color {
+    color: #d5e6e8;
+}
+
+{#.mycontent-left {#}
+{#    border-right: 1px solid #333;#}
+
+
+</style>
+<nav class="navbar navbar-dark p-3 border border-info">
+    <div class="container">
+        <a class="navbar-brand" href="#"><h4>Free International Bitcoin Lottery</h4></a>
+        <div class="navbar-brand ml-auto">
+            <h5>Bitcoin Foundation org</h5>
+{#            <p>blockchain.info</p>#}
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row full-img2">
+        <div class="col-2 p-0 d-none d-xl-block mt-5">
+            <img src="{% static 'img/bitcoin.svg' %}" alt="">
+        </div>
+        <div class="col-8 pt-5 pb-5 ml-auto mr-auto text-center">
+            <h1 class="item-color pt-5">Бесплатная Международная Биткоин Лотерея</h1>
+        </div>
+        <div class="col-2 p-0 d-none d-xl-block mt-5">
+            <img src="{% static 'img/bitcoin.svg' %}" alt="">
+        </div>
+    </div>
+</div>
+
+{#    welcome #}
+
+    <div class="row">
+{#        <div class="col-2"></div>#}
+        <div class="col-12 text-center">
+            <div class="alert alert-info border border-info p-4 m-0 " role="alert">
+                <h4>Добро пожаловать!</h4>
+            </div>
+        </div>
+{#        <div class="col-2"></div>#}
+    </div>
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-2 p-0 d-none d-xl-block mt-auto mb-auto">
+            <img src="{% static 'img/bitcoin.svg' %}" alt="">
+        </div>
+        <div class="col-xl-4 col-md-6">
+            <div class="mycontent-left pr-3">
+                <h5 class="text-center ml-auto mr-auto pb-3">Правила участия</h5>
+                <ul class="mb-3 mt-3">
+                      <li>Лотерея проводится при поддержке Bitcoin Foundation org</li>
+                      <li>Участие в лоттерее является полностью бесплатным</li>
+                      <li>Лотерея проводится каждый день в 12:00 по CET</li>
+                      <li>Для участия необходимо заполнить контактные данные</li>
+                      <li>В момент регистрации на электронную почту высылается письмо подтверждение с ID участника</li>
+                      <li>В случае выигрыша на электронную почту высылается письмо подтверждение в течении 24 часов с момента розыгрыша</li>
+                      <li>Результаты лотереи можно также проверить с помощью своего ID на странице лотереи</li>
+                      <li>Важно! Зачисление Биткоинов на кошелек победителя проводится только при наличии ID</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+            <h5 class="text-center ml-auto mr-auto ">Участвовать</h5>
+            <div class="mycontent-right pl-3">
+                <form  method="POST" action="">
+                    <div class="">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <input type="submit" class="btn btn-info" value="Зарегистрироваться">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-2 p-0 d-none d-xl-block mt-auto mb-auto">
+{#            <img src="{% static 'img/bitcoin.svg' %}" alt="">#}
+        </div>
+    </div>
+</div>
+{#    results #}
+
+    <div class="row mt-5 mb-5">
+{#        <div class="col-2"></div>#}
+        <div class="col-12 text-center">
+            <div class="alert alert-secondary border border-secondary p-4 m-0" role="alert">
+                <h4>Результаты</h4>
+            </div>
+        </div>
+{#        <div class="col-2"></div>#}
+    </div>
+
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-2 p-0 d-none d-xl-block mt-auto mb-auto">
+{#            <img src="{% static 'img/bitcoin.svg' %}" alt="">#}
+        </div>
+        <div class="col-xl-4 col-md-6">
+            <div class="mycontent-left pr-3 text-center">
+                <h5 class="text-center ml-auto mr-auto pb-3">Последние победители</h5>
+                  <p>id 12345678 0.01btc</p>
+                  <p>id 66666666 0.01btc</p>
+                  <p>id 98765432 0.01btc</p>
+                  <p>id 12345678 0.01btc</p>
+                  <p>id 66666666 0.01btc</p>
+                  <p>id 98765432 0.01btc</p>
+                  <p>...</p>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+            <h5 class="text-center ml-auto mr-auto pb-3 text-center">Следующий розыгрыш</h5>
+            <div class="mycontent-right pl-3 text-center">
+                <p>До розыгрыша осталось:</p>
+            </div>
+        </div>
+        <div class="col-2 p-0 d-none d-xl-block mt-auto mb-auto">
+            <img src="{% static 'img/bitcoin.svg' %}" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row ">
+        <form class="form-inline ml-auto mr-auto pl-3">
+            <div class="form-group mx-sm-3 m-2">
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Введите ID">
+            </div>
+            <a class="btn btn-info m-2" href="">Проверить результат по ID</a>
+        </form>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row mt-3 mb-3">
+
+        <div class="col-2"></div>
+
+        <div class="col-8">
+            <hr>
+            <p>Bitcoin Foundation org — организация, зарегистрированная в качестве благотворительного фонда. Фонд был основан в сентябре 2017 года с заявленными уставными целями «стандартизация, защита и поощрение использования криптографических средств Bitcoin на благо пользователей во всём мире». Организационная модель фонда разработана по аналогии с Linux Foundation, и финансируется в основном за счет грантов коммерческих компаний, которые зависят от технологии Bitcoin.
+            </p>
+            <p class="small hideme">
+            <b>Миссия: децентрализация финансовых и законодательных рычагов управления обществом. Поддержка и развитие различных проектов – от обеспечения чистой водой странам Африки до защиты цифровых прав.
+            </b>
+            </p>
+            <hr>
+        </div>
+
+        <div class="col-2"></div>
+    </div>
+</div>
+<div class="row">
+{#        <div class="col-2"></div>#}
+    <div class="col-12 text-center">
+        <div class="alert alert-info border border-info p-4 m-0 " role="alert">
+            <h5>© 2018 Copyright, All rights reserved.
+            </h5>
+        </div>
+    </div>
+{#        <div class="col-2"></div>#}
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="">
+            <div class="row full-img3">
+                <div class="col-2 p-0 d-none d-xl-block mt-5">
+                    <img src="{% static 'img/bitcoin.svg' %}" alt="">
+                </div>
+                <div class="col-8 pt-5 pb-5 ml-auto mr-auto text-center">
+                    <h3 class="item-color pt-5"></h3>
+                </div>
+                <div class="col-2 p-0 d-none d-xl-block mt-5">
+                    <img src="{% static 'img/bitcoin.svg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}

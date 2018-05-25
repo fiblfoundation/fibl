@@ -1,0 +1,87 @@
+.mt0 { margin-top:0px; }
+.mt2 { margin-top:2px; }
+.mt5 { margin-top:5px; }
+.ml5 { margin-left:5px; }
+.ml32 { margin-left:32px; }
+.mr2 { margin-right:2px; }
+.mr5 { margin-right:5px; }
+.mr7 { margin-right:7px; }
+.mt5  { margin-top: 5px; }
+.mt10 { margin-top:10px; }
+.mt20 { margin-top:20px; }
+.mb5  { margin-bottom:5px; }
+.mb10 { margin-bottom:10px; }
+.m0000 { margin:0px 0px 0px 0px; }
+.m2222 { margin:2px 2px 2px 2px; }
+.m0050 { margin:0px 0px 5px 0px; }
+.m5050 { margin:5px 0px 5px 0px; }
+.m5555 { margin:5px 5px 5px 5px; }
+.m9090 { margin:9px 0px 9px 0px; }
+.m9050 { margin:9px 0px 5px 0px; }
+.p0000 { padding:0px 0px 0px 0px; }
+.p5555 { padding:5px 5px 5px 5px; }
+.pRL0 { padding-right:0px; padding-left:0px; }
+#main:focus { outline: none; }
+.inline-block { display:inline-block; }
+.valign-middle { vertical-align: middle; }
+.hddn { display: none; }
+.vddn { visibility: hidden; }
+[data-hidden="hidden"] { visibility: hidden; }
+#form .form-control-feedback { pointer-events: auto; }
+#form .form-control-feedback:hover { cursor: pointer; }
+.ht100 { height: 100%; }
+.red2 { color: #a94442; }
+.radlist input[type="radio"] {
+  margin: 0px 5px 0px 5px;
+  vertical-align :middle;
+}
+
+/*select.form-control { -webkit-appearance: menulist; }*/
+/*.radlist th,*/
+
+/*.radlist td { 
+  border-top: none !important;
+}*/
+
+.radlist tbody tr td { 
+  border-top: none !important;
+  padding: 3px 0px 3px 0px !important;
+}
+
+.radlist tbody tr td label { 
+  margin: 0px 0px 0px 0px;
+  vertical-align: middle;
+}
+
+/*.spanbox {
+  -moz-box-shadow: 0 0 2px black;
+  -webkit-box-shadow: 0 0 2px black;
+  box-shadow: 0 0 2px black;
+}*/
+
+.spanbox {
+  /*background-color: gray;*/
+  border: 1px solid #0094ff;
+  border-radius: 5px;
+  margin: -1px;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.validatortext, .error
+{
+	text-align:left;
+	vertical-align:middle;
+	padding-left:3px;
+	color:Red;
+}
