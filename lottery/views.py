@@ -2,6 +2,8 @@ from django.conf import settings
 from django.shortcuts import render, HttpResponseRedirect
 from django.core.mail import send_mail
 
+from .utils import code_list
+
 from .forms import Client, ClientForm
 from .models import Client
 
@@ -10,6 +12,7 @@ from .models import Client
 
 def client(request):
 
+    model = Client.objects.all()
     form = ClientForm(request.POST or None)
     if request.method == 'POST' and form.is_valid():
         # for key, value in form.cleaned_data.items():
@@ -42,9 +45,9 @@ def client(request):
         )
 
         return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
-    title = 'Hi there!'
+
     context = {
         'form': form,
-        'title': title,
+        'code_list': code_list,
     }
     return render(request, 'index.html', context)

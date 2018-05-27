@@ -15,3 +15,4 @@ class Client(models.Model):
         if self.shortcode is None or self.shortcode == "":
             self.shortcode = create_shortcode(self)
         super(Client, self).save(*args, **kwargs)
+

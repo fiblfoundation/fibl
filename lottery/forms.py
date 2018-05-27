@@ -9,15 +9,15 @@ class ClientForm(forms.ModelForm):
         model = Client
         fields = ['full_name', 'email', 'skype_telegram',]
         widgets = {
-            'full_name': TextInput(attrs={'placeholder': 'Name...'}),
+            'full_name': TextInput(attrs={'placeholder': 'Имя...'}),
             'email': TextInput(attrs={'placeholder': 'Email...'}),
             'skype_telegram': TextInput(attrs={'placeholder': 'Skype/Telegram...'}),
 
         }
         labels = {
-            'full_name': 'Name',
+            'full_name': 'Имя',
             'email': 'Email',
-            'skype_telegram': 'Skype or Telegram',
+            'skype_telegram': 'Skype или Telegram',
         }
 
     def clean_email(self):

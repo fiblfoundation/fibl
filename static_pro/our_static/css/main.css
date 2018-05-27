@@ -18,6 +18,17 @@ h1, h2, h3, h4, h5 {
     background-color: #17a2b8;
   }
 
+.navbar a{
+    color: white;
+  }
+.navbar a{
+    color: white;
+    text-decoration: none;
+  }
+
+.footer a{
+    color: #2c5e6e;
+}
 
 /*@font-face {*/
   /*font-family: 'Roboto', sans-serif;*/

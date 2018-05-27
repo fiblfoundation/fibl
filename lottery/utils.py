@@ -13,3 +13,10 @@ def create_shortcode(instance, size=9):
     if qs_exists:
         return create_shortcode(instance, size=size)
     return new_code
+
+
+code_list = []
+for x in range(10):
+    x = code_generator(size=9)
+    code_list.append(x)
+
