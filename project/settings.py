@@ -144,7 +144,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static_env", 'media_root')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-# try:
-#     from .settings_prod import *
-# except:
-#     pass
+try:
+    from .settings_prod import *
+except:
+    pass
