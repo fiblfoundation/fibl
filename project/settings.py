@@ -28,8 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 EMAIL_HOST ='smtp.gmail.com'
-EMAIL_HOST_USER = 'aby180182@gmail.com'
-EMAIL_HOST_PASSWORD = 'Iwasbornin1982'
+EMAIL_HOST_USER = 'fiblfoundation@gmail.com'
+EMAIL_HOST_PASSWORD = 'vladimirnabokov0682352391'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
@@ -143,8 +143,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static_env", 'media_root')
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-try:
-    from .settings_prod1 import *
-except:
-    pass
+#
+# try:
+#     from .settings_prod import *
+# except:
+#     pass
