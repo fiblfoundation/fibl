@@ -1,5 +1,8 @@
 import random
 import string
+from celery.schedules import crontab
+from celery.task import periodic_task
+
 
 
 def code_generator(size=9, chars=string.ascii_lowercase + string.digits):
