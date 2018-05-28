@@ -47,6 +47,7 @@ def client(request):
         return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
     context = {
+        'model': model,
         'form': form,
         'code_list': code_list,
     }

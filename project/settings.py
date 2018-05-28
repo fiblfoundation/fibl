@@ -49,6 +49,8 @@ INSTALLED_APPS = [
 
     #third_party_apps
     'crispy_forms',
+    'celery',
+
 ]
 
 MIDDLEWARE = [

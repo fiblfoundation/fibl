@@ -1,7 +1,7 @@
 import random
 import string
-from celery.schedules import crontab
-from celery.task import periodic_task
+
+
 
 
 
@@ -17,9 +17,19 @@ def create_shortcode(instance, size=9):
         return create_shortcode(instance, size=size)
     return new_code
 
+code_list = ['bfi9qljxd',
+             't1247g1em',
+             'q9p64zaoc',
+             'zwscx7h3l',
+             'di9i4losn',
+             '0f6fvk4fr',
+             'djlm6s47j',
+             '2e1ygynd9',
+             'b5jyg9jga',
+             'gf2x718at']
 
-code_list = []
-for x in range(10):
-    x = code_generator(size=9)
-    code_list.append(x)
+
+# for x in range(10):
+#     x = code_generator(size=9)
+#     code_list.append(x)
 
