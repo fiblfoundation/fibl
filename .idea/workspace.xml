@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbb0824f-bf9e-470e-abe4-09bb76a78d55" name="Default" comment="1">
-      <change beforePath="$PROJECT_DIR$/lottery/templates/base.html" afterPath="$PROJECT_DIR$/lottery/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/lottery/templates/index.html" afterPath="$PROJECT_DIR$/lottery/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/static_pro/our_static/css/main.css" afterPath="$PROJECT_DIR$/static_pro/our_static/css/main.css" />
+      <change beforePath="$PROJECT_DIR$/project/settings.py" afterPath="$PROJECT_DIR$/project/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3256">
-              <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+            <state relative-caret-position="594">
+              <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="151" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -45,13 +43,13 @@
         <entry file="file://$PROJECT_DIR$/static_pro/our_static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="902">
-              <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="17" />
+              <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lottery/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
@@ -110,12 +108,12 @@
         <option value="$PROJECT_DIR$/project/settings_prod1.py" />
         <option value="$PROJECT_DIR$/lottery/utils.py" />
         <option value="$PROJECT_DIR$/lottery/models.py" />
-        <option value="$PROJECT_DIR$/project/settings.py" />
         <option value="$PROJECT_DIR$/lottery/forms.py" />
         <option value="$PROJECT_DIR$/lottery/views.py" />
         <option value="$PROJECT_DIR$/lottery/templates/index.html" />
         <option value="$PROJECT_DIR$/static_pro/our_static/css/main.css" />
         <option value="$PROJECT_DIR$/lottery/templates/base.html" />
+        <option value="$PROJECT_DIR$/project/settings.py" />
       </list>
     </option>
   </component>
@@ -622,14 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3256">
-          <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lottery/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
@@ -670,7 +660,7 @@
     <entry file="file://$PROJECT_DIR$/static_pro/our_static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="902">
-          <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="17" />
+          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -689,6 +679,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="151" selection-end-column="8" />
           <folding />
         </state>
       </provider>
