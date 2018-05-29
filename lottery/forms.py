@@ -32,3 +32,11 @@ class ClientForm(forms.ModelForm):
 
             # A user was found with this as a username, raise an error.
         raise forms.ValidationError('This email address is already takes part.')
+
+
+class CheckForm(forms.Form):
+    unique_id = forms.CharField(required=False, max_length=9, label='')
+
+    def __init__(self, *args, **kwargs):
+        super(CheckForm, self).__init__(*args, **kwargs)
+        self.fields['unique_id'].widget.attrs['placeholder'] = 'Введите ID'

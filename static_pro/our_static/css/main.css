@@ -5,7 +5,10 @@ body{
     background-color: #f2fefe;
 }
 
-
+.message_colors{
+    background-color: #ac2925;
+    color: white;
+}
 .bgc {
     background-color: #f2fefe;
 }

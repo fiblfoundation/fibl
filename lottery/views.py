@@ -1,10 +1,11 @@
 from django.conf import settings
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render, HttpResponseRedirect, redirect
 from django.core.mail import send_mail
+from django.contrib import messages
 
 from .utils import code_list
 
-from .forms import Client, ClientForm
+from .forms import CheckForm, ClientForm
 from .models import Client
 
 
@@ -46,9 +47,19 @@ def client(request):
 
         return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
+    check_form = CheckForm(request.POST or None)
+    check_text = 'Проверьте результат.'
     context = {
+        'check_form': check_form,
         'model': model,
         'form': form,
         'code_list': code_list,
+        'check_text': check_text
     }
+
+    if request.method == 'POST' and check_form.is_valid():
+        messages.error(request, "<h5>К сожалению вы не выиграли. Попробуйте участвовать в следующем розыгрыше!</h5>", extra_tags='html_safe')
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+
     return render(request, 'index.html', context)
